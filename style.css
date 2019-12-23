@@ -1,0 +1,104 @@
+html{
+    font-size: 16pt;
+}
+body{
+    margin: 0 auto;
+    background-color:  #55FFFF;
+    max-width: 1200px;
+    color: green;
+}
+header{
+position: relative;
+padding: none;
+
+}
+#head-img{
+    width: 100%;
+}
+#head-text-1{
+    font-size: 32pt;
+    position: absolute; 
+    top: 5px; 
+    right: 60px; 
+    font-family: 'Permanent marker', 'Indie Flower'; 
+    color: #00000A; 
+    text-align: center;
+}
+#head-text-2{
+    position: absolute; 
+    top: 60px; 
+    right: 60px; 
+    font-family: 'Permanent marker'; 
+    color: black; 
+    text-align: center; 
+}
+article{
+  clear: both;
+  overflow: auto;
+  width: 100%;
+  font-family: 'Fredoka One';
+  padding: 10px;
+}
+figcaption{
+  text-align: center;
+  font-family:'Indie Flower';
+  font-weight: bold; 
+  border: 1px solid #00002A;
+}
+
+.left{
+  width: 590px;
+  float: left;
+}
+.right{
+  width: 590px;
+  float: right;
+}
+.imgleft{
+    box-shadow: 5px 5px 5px #153F15;
+    width: 590px;
+
+}
+.imgright{
+    box-shadow: -5px 5px 5px #153F15;
+    width: 590px;
+    float: right;
+}
+#slideshow{
+    overflow: hidden;
+    width: 590px;
+    margin: 0 auto;
+    float: center;
+    clear: both;
+  }
+  
+  .slide-wrapper{
+    width: 2360px;
+    animation: ease infinite;
+    -webkit-animation: slide 18s ease infinite;
+  }
+  
+  .slide{
+    float: left;
+    width: 590px;
+  }
+  .slide-img{
+    width: 590px;
+  }
+  
+  @keyframes slide {
+    20% {margin-left: 0px;}
+    40% {margin-left: -590px;}
+    60% {margin-left: -1180px;}
+    80% {margin-left: -1770px;}
+
+  }
+footer{
+  background-color: green;
+  color: blue;
+  font-family: 'Permanent marker';
+}
+.foot-right{
+  float: right;
+}
+  
