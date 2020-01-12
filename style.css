@@ -3,19 +3,23 @@ html{
 }
 body{
     margin: 0 auto;
-    background-color:  #55FFFF;
+    background-image: url("img/night.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     max-width: 1200px;
-    color: green;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 header{
-position: relative;
-padding: none;
-
+    position: relative;
+    padding: none;
+    padding-bottom: 50px;
 }
 #head-img{
     width: 100%;
 }
-#head-text-1{
+.head-text-1{
     font-size: 32pt;
     position: absolute; 
     top: 5px; 
@@ -24,7 +28,7 @@ padding: none;
     color: #00000A; 
     text-align: center;
 }
-#head-text-2{
+.head-text-2{
     position: absolute; 
     top: 60px; 
     right: 60px; 
@@ -32,9 +36,47 @@ padding: none;
     color: black; 
     text-align: center; 
 }
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  top: 5px;
+  left: 60px;
+  font-family: 'Permanent marker'; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  font-family: 'Indie Flower'; 
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  font-family: 'Indie Flower'; 
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 50px;
+}
+.container > div{
+  font-family: 'Fredoka One';
+  padding: 5px;
+}
 article{
-  clear: both;
-  overflow: auto;
   width: 100%;
   font-family: 'Fredoka One';
   padding: 10px;
@@ -43,26 +85,24 @@ figcaption{
   text-align: center;
   font-family:'Indie Flower';
   font-weight: bold; 
-  border: 1px solid #00002A;
+  border: 5px solid white;
+  border-radius: 5px;
 }
-
-.left{
-  width: 590px;
-  float: left;
+div > figure{
+  width: 100%;
+  margin: 0;
 }
-.right{
-  width: 590px;
-  float: right;
+figure > .imgleft{
+    box-shadow: 5px 5px 5px white;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
-.imgleft{
-    box-shadow: 5px 5px 5px #153F15;
-    width: 590px;
-
-}
-.imgright{
-    box-shadow: -5px 5px 5px #153F15;
-    width: 590px;
-    float: right;
+figure > .imgright{
+    box-shadow: -5px 5px 5px white;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 #slideshow{
     overflow: hidden;
@@ -77,7 +117,6 @@ figcaption{
     animation: ease infinite;
     -webkit-animation: slide 18s ease infinite;
   }
-  
   .slide{
     float: left;
     width: 590px;
@@ -94,11 +133,9 @@ figcaption{
 
   }
 footer{
-  background-color: green;
-  color: blue;
+  color: lightblue;
   font-family: 'Permanent marker';
 }
 .foot-right{
   float: right;
 }
-  
